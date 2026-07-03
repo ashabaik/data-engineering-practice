@@ -19,7 +19,7 @@ SQL_SERVER = "DESKTOP-MGMG36V"
 DATABASE = "Sales_DE"
 
 # Slack Webhook URL for notifications
-SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
+SLACK_WEBHOOK_URL = os.getenv("SLACK_WEBHOOK_URL")
 
 def send_slack_notification(message):
     """Send a notification to Slack to track process execution."""
